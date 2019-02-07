@@ -8,14 +8,20 @@ import {
   TouchableOpacity, 
   TouchableWithoutFeedback,  
   Keyboard,
-  Animated } 
-  from "react-native";
+  Image,
+  Text,
+  Animated,
+  ScrollView
+} from "react-native";
 
 import { connect } from "react-redux";
 import LinearGradient from "react-native-linear-gradient";
 import Icon from "react-native-vector-icons/Ionicons";
 import { addMessage } from "../../../store/actions/index";
 import MainText from '../../../components/UI/MainText/MainText';
+import SuggestionBubble from '../../../components/SuggestionBubble/SuggestionBubble';
+import CartItemList from '../../../components/CartItemList/CartItemList';
+import { Emitter } from 'react-native-particles';
 
 const screenWidth = Dimensions.get("window").width;
 const screenHeight = Dimensions.get("window").height;
@@ -148,6 +154,10 @@ class HomeScreen extends Component {
     }
   };
 
+  suggestionPressed = text => {
+    this.state.text = text;
+  }
+
   requestHandler = text => {
     Keyboard.dismiss();
     this.props.onAddMessage(text);
@@ -158,7 +168,7 @@ class HomeScreen extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.helloContainer}>
           <MainText style={styles.helloText}>Hello Jarod</MainText>
           <View style={styles.subHeaderContainer}>
@@ -169,8 +179,72 @@ class HomeScreen extends Component {
             <MainText style={styles.subHeaderText}>58°</MainText>
           </View>
         </View>
-        <View />
-      </View>
+        <Emitter
+          style={{}}
+          numberOfParticles={500}
+          emissionRate={0.1}
+          interval={1000}
+          particleLife={8000}
+          direction={45}
+          spread={25}
+          speed={50}
+          gravity={0}
+          width={screenWidth}
+          height={screenHeight}
+          fromPosition={{ x: screenWidth*0.05, y: 0 }}
+        >
+          <Text style={{}}>🍆</Text>
+        </Emitter>
+        <View style={styles.inputContainer}>
+          <TextInput style={styles.textInput} blurOnSubmit={true} multiline={true} onChangeText={text => this.setState(
+            { text }
+          )} value={this.props.message[0]} placeholder="What do you need today?" placeholderTextColor="#777777" />
+          <TouchableOpacity text={this.state.text} onPress={this.requestHandler}>
+            <View style={styles.continueButton}>
+              <Icon size={35} name={"md-arrow-dropright"} color="black" />
+            </View>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.suggestionsContainer}>
+          <View style={styles.bubbleContainer}>
+              <SuggestionBubble onPress={this.suggestionPressed}>Deliver a Camel to Martin</SuggestionBubble>
+              <SuggestionBubble>Set my alarm for 8pm</SuggestionBubble>
+            </View>
+          <View style={styles.bubbleContainer}>
+              <SuggestionBubble>Fix my sad life pls</SuggestionBubble>
+              <SuggestionBubble>Order Dinner</SuggestionBubble>
+              <SuggestionBubble>Book a flight</SuggestionBubble>
+            </View>
+        </View>
+        <View style={styles.exploreContainer}>
+            <MainText style={styles.headerText}>Explore</MainText>
+            <ScrollView contentContainerStyle={{flexDirection: 'row', paddingRight: 15, width: screenWidth*1.7, justifyContent: 'space-between'}}>
+              <TouchableOpacity>
+                <Image source={require('../../../assets/starbs.jpg')} style={{width: 200, height: 200, borderRadius: 5}} />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Image source={require('../../../assets/starbs.jpg')} style={{width: 200, height: 200, borderRadius: 5}} />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Image source={require('../../../assets/starbs.jpg')} style={{width: 200, height: 200, borderRadius: 5}} />
+              </TouchableOpacity>
+            </ScrollView>
+        </View>
+        <View style={styles.exploreContainer}>
+            <MainText style={styles.headerText}>Explore</MainText>
+            <ScrollView contentContainerStyle={{flexDirection: 'row', paddingRight: 15, width: screenWidth*1.7, justifyContent: 'space-between'}}>
+              <TouchableOpacity>
+                <Image source={require('../../../assets/starbs.jpg')} style={{width: 200, height: 200, borderRadius: 5}} />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Image source={require('../../../assets/starbs.jpg')} style={{width: 200, height: 200, borderRadius: 5}} />
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <Image source={require('../../../assets/starbs.jpg')} style={{width: 200, height: 200, borderRadius: 5}} />
+              </TouchableOpacity>
+            </ScrollView>
+        </View>
+      </ScrollView>
     );
   }
 }
@@ -178,29 +252,80 @@ class HomeScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     height: screenHeight * 2,
-    alignItems: 'center'
+    alignItems: "center",
+    backgroundColor: '#fcfcfc'
   },
   helloContainer: {
     flex: 0.05,
-    alignItems: 'center',
-    justifyContent: 'center'
+    alignItems: "center",
+    justifyContent: "center",
+    paddingTop: screenHeight*0.02
   },
   helloText: {
     fontSize: 40,
-    fontWeight: '700'
+    fontWeight: "700"
   },
   subHeaderContainer: {
-    flexDirection: 'row',
+    flexDirection: "row",
     width: screenWidth * 0.7,
-    alignItems: 'center',
-    justifyContent: 'space-between'
+    alignItems: "center",
+    justifyContent: "space-between",
+    margin: 5,
+    padding: 3
   },
   subHeaderText: {
     fontSize: 15,
-    fontWeight: '300'
+    fontWeight: "300"
   },
-  weatherIconStyle: {
-
+  textInput: {
+    width: screenWidth * 0.8,
+    justifyContent: "center",
+    textAlign: "left",
+    fontSize: 14,
+    fontWeight: "200",
+    fontFamily: "Montserrat-Black",
+    color: "#333333"
+  },
+  continueButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    flex: 0.02,
+    width: screenWidth * 0.95,
+    backgroundColor: "white",
+    borderWidth: 1,
+    borderColor: "#CCCCCC",
+    borderRadius: 5,
+    shadowColor: "black",
+    elevation: 1,
+    shadowOffset: {
+      width: 0,
+      height: 2
+    },
+    shadowOpacity: 0.2,
+    margin: 10,
+    padding: 10
+  },
+  suggestionsContainer: {
+    flex: 0.2,
+    width: screenWidth*0.9
+  },
+  bubbleContainer: {
+    flexDirection: 'row',
+    width: screenWidth * 0.9
+  },
+  exploreContainer: {
+    flex: 0.16,
+    width: screenWidth*0.9,
+    backgroundColor: "#fcfcfc",
+    alignItems: "flex-start"
+  },
+  headerText: {
+    fontSize: 24,
+    fontWeight: "300"
   }
 });
 

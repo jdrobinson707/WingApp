@@ -1,53 +1,7 @@
 dependencies: \
   /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/WingApp/AppDelegate.m \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/WingApp/AppDelegate.h \
+  WingApp/AppDelegate.h \
   /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBundleURLProvider.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Modules/module.modulemap \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMapsBase.framework/Modules/module.modulemap \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMapsBase.framework/Headers/GoogleMapsBase.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPanoramaView.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPanoramaSource.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPanoramaService.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPanoramaLink.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPanoramaLayer.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPanoramaCamera.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPanorama.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSOrientation.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSURLTileLayer.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSTileLayer.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSSyncTileLayer.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPolyline.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPolygon.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSOverlayLayer.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSMarkerLayer.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSMarker.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSGroundOverlay.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSOverlay.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSCircle.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSServices.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSMutablePath.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSUISettings.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSMapView.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSMapView+Animation.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSMapStyle.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSMapLayer.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSIndoorDisplay.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSPath.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSGeometryUtils.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSGeocoder.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSProjection.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSCoordinateBounds+GoogleMaps.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSCameraUpdate.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSCameraPosition.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSCALayer.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSAddress.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSIndoorLevel.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GMSIndoorBuilding.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/GoogleMaps.framework/Headers/GoogleMaps.h \
   ../node_modules/react-native-navigation/ios/RCCManager.h \
   /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
   /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
@@ -56,52 +10,4 @@ dependencies: \
   /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
   /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
   /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Modules/module.modulemap \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Modules/module.modulemap \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFWebViewAppLinkResolver.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFURL.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFMeasurementEvent.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFAppLinkTarget.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFAppLinkResolving.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFAppLinkNavigation.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFAppLink.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFTaskCompletionSource.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFTask.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFGeneric.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFExecutor.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFCancellationTokenSource.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFCancellationTokenRegistration.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/BFCancellationToken.h \
-  /Users/jarodrobinson/FacebookSDK/Bolts.framework/Headers/Bolts.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKURL.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKProfile.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKUtility.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKSettings.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKMacros.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKConstants.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKButton.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKCopying.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h \
-  /Users/jarodrobinson/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h
+  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h

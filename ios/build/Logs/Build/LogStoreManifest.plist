@@ -5,65 +5,6 @@
 	<key>logFormatVersion</key>
 	<integer>9</integer>
 	<key>logs</key>
-	<dict>
-		<key>044A4B81-7D70-40F6-85C0-73D23DAC7E06</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>044A4B81-7D70-40F6-85C0-73D23DAC7E06.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>E</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>WingApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>WingApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>570929088.31662798</real>
-			<key>timeStoppedRecording</key>
-			<real>570929103.64258695</real>
-			<key>title</key>
-			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>044A4B81-7D70-40F6-85C0-73D23DAC7E06</string>
-		</dict>
-		<key>66286D01-1649-4AD8-A16A-760D61F6045E</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>66286D01-1649-4AD8-A16A-760D61F6045E.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>E</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>WingApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>WingApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>570929226.44064605</real>
-			<key>timeStoppedRecording</key>
-			<real>570929239.52447999</real>
-			<key>title</key>
-			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>66286D01-1649-4AD8-A16A-760D61F6045E</string>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
