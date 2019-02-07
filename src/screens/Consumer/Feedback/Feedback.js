@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Dimensions, StyleSheet } from "react-native";
+import { View, Text, Dimensions, StyleSheet, Platform } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 
 class Feedback extends Component {

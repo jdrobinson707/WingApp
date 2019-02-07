@@ -1,16 +1,23 @@
-import React, { Component } from 'react';
-import { View, Text, Dimensions, StyleSheet } from "react-native";
+import React, {Component} from 'react';
+import {View, Text, Dimensions, StyleSheet, ScrollView} from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+import Task from "./Task";
+import MainText from '../../../components/UI/MainText/MainText';
+// import connect from "react-redux/es/connect/connect";
+import {connect} from "react-redux";
+import {addMessage} from "../../../store/actions/index";
 
+const screenWidth = Dimensions.get("window").width;
+const screenHeight = Dimensions.get("window").height;
 
 class TaskHistory extends Component {
-    
+
     componentDidMount() {
         Icon.getImageSource("md-cart", 26).then(cart => {
             Icon.getImageSource("md-menu", 27).then(sideDrawer => {
                 this.props.navigator.setButtons({
-                    rightButtons: [{ id: "cart", icon: cart }],
-                    leftButtons: [{ id: "sideDrawer", icon: sideDrawer }]
+                    rightButtons: [{id: "cart", icon: cart}],
+                    leftButtons: [{id: "sideDrawer", icon: sideDrawer}]
                 });
             });
         });
@@ -110,13 +117,51 @@ class TaskHistory extends Component {
     };
 
     render() {
-        return <View>
-                <Text>
-                Task History</Text>
-            </View>
+        return (
+            <ScrollView contentContainerStyle={styles.container}>
+                <View style={styles.greetingContainer}>
+                    <MainText style={styles.greeting}>What you've been up to</MainText>
+                    <Task/>
+                    <Task/>
+                    <Task/>
+                    <Task/>
+                    <Task/>
+                    <Task/>
+                </View>
+            </ScrollView>
+
+        );
     }
 
 }
 
+const styles = StyleSheet.create({
+    greeting: {
+        fontSize: 30, color: "black", fontWeight: "200", borderWidth: 0
+    },
+    container:{
+        height: screenHeight * 1.5,
+        // alignItems: 'center',
+        paddingTop: 30
 
-export default TaskHistory;
+    },
+    greetingContainer: {
+        // flex: 0.05,
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
+});
+
+const mapStateToProps = state => {
+    return {
+        message: state.message.message
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onAddMessage: (message) => dispatch(addMessage(message))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TaskHistory);
