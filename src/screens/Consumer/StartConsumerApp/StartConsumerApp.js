@@ -1,3 +1,5 @@
+import React from 'react';
+import { Image } from 'react-native'
 import { Navigation } from 'react-native-navigation';
 import { Dimensions } from 'react-native';
 
@@ -6,6 +8,7 @@ const startMainTabs = () => {
     screen: 
     {
       screen: "wing-app.ConsumerHomeScreen",
+      titleImage: require('../../../assets/mainlogo.jpg')
     },
     drawer: {
       left: {

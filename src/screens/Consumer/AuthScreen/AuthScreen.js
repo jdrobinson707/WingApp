@@ -59,11 +59,11 @@ class AuthScreen extends Component {
             </MainText>
           </View>
           <View style={styles.inputContainer}>
-            <ButtonWithBackground color="#29aaf4" style={[styles.buttonContainer, { borderColor: "white", backgroundColor: "transparent" }]} textStyle={[styles.buttonText, { color: "white" }]} onPress={this.quickShit}>
+            <ButtonWithBackground color="#29aaf4" style={[styles.buttonContainer, { borderColor: "white", backgroundColor: "white" }]} textStyle={[styles.buttonText, { color: "#316484", fontWeight: '600' }]} onPress={this.quickShit}>
               Continue With Facebook
             </ButtonWithBackground>
             <Divider style={styles.divider} />
-            <ButtonWithBackground color="#29aaf4" style={[styles.buttonContainer, { borderColor: "white", backgroundColor: "transparent" }]} textStyle={[styles.buttonText, { color: "white" }]} onPress={this.signUpHandler}>
+            <ButtonWithBackground color="#29aaf4" style={[styles.buttonContainer, { borderColor: "white", backgroundColor: "transparent" }]} textStyle={[styles.buttonText, { color: "white", fontWeight: '600' }]} onPress={this.signUpHandler}>
               Sign Up
             </ButtonWithBackground>
           </View>
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     buttonText: { 
       color: "white", 
       fontSize: 15, 
-      fontWeight: "400", 
+      fontWeight: "600", 
       fontFamily: "Montserrat-Black",
       letterSpacing: 1
     },
@@ -122,8 +122,14 @@ const styles = StyleSheet.create({
     buttonContainer: { 
       borderColor: "white", 
       backgroundColor: "white" ,
-      height: screenHeight * 0.06,
-      borderRadius: 40,
+      height: screenHeight * 0.065,
+      borderRadius: 10,
+      elevation: 1,
+      shadowOffset: {
+        width: 0,
+        height: 5
+      },
+      shadowOpacity: 0.2,
       alignItems: 'center',
       justifyContent: 'center'
     },

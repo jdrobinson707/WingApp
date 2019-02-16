@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
     TouchableOpacity, 
-    Platform, 
+    Platform,
     TouchableNativeFeedback, 
     Text, 
     View, 
@@ -11,7 +11,7 @@ import {
 const SuggestionBubble = props => {
     const content = (
         <View {...props} style={[styles.button, props.style]}>
-            <Text style={styles.textStyle}>{props.children}</Text>
+            <Text style={[styles.textStyle, props.textStyle]}>{props.children}</Text>
         </View>
     );
     if (Platform.OS === 'android') {
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     textStyle: {
         fontSize: 12,
         fontWeight: "300",
-        color: '#777777'
+        color: '#333333'
     }
 });
 

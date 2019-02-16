@@ -44,6 +44,35 @@
 		<data>
 		SyvObHkkk6SlcWtv7C2+/olJLD8=
 		</data>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<data>
+		DQ4GPJ7FuM6H+FaCC/2wxhPSGCQ=
+		</data>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<data>
+		HK6asLJ70IK7E4e83e8R1gxACHo=
+		</data>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		/8LQToTPOL9FsEsYDaACQ21Day0=
+		</data>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<data>
+		P6P66kW7+LvLIo4WHjXGltpT8CA=
+		</data>
+		<key>Frameworks/libXCTestBundleInject.dylib</key>
+		<data>
+		xKX69bDGMJa2TcU/BC9ypZ06rsI=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		FuSxptcbGcPBdPKOBwRQzBhTUBk=
@@ -83,6 +112,26 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/WingAppTests.xctest.dSYM/Contents/Info.plist</key>
+		<data>
+		ExdrQApldKWr6+yZaM7raCieJEY=
+		</data>
+		<key>PlugIns/WingAppTests.xctest.dSYM/Contents/Resources/DWARF/WingAppTests</key>
+		<data>
+		PXvnO0guX7FoECtRMxHV+G+n+Ps=
+		</data>
+		<key>PlugIns/WingAppTests.xctest/Info.plist</key>
+		<data>
+		IIrE3X5lqW/ewZuIvq8Z2/WSVv4=
+		</data>
+		<key>PlugIns/WingAppTests.xctest/WingAppTests</key>
+		<data>
+		k4weawY0C5fvlJDhwthovVc1kdQ=
+		</data>
+		<key>PlugIns/WingAppTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		GOFssTg9vlVFQLRkMcCmn8MRZRg=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -205,6 +254,74 @@
 			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
 			</data>
 		</dict>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DQ4GPJ7FuM6H+FaCC/2wxhPSGCQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			VfVpYXVjG5OK2j8J39CP2mIMg1P5eFaYkRIJ/Hb2RSQ=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HK6asLJ70IK7E4e83e8R1gxACHo=
+			</data>
+			<key>hash2</key>
+			<data>
+			olgg9NXiZ2M1ifvjBR8uTJxtXlM5EacLdDrNxfmImoY=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/8LQToTPOL9FsEsYDaACQ21Day0=
+			</data>
+			<key>hash2</key>
+			<data>
+			C7sJpbu4qpi8/rH5JYpdQYncotP69JQ9Fiu8jrHXYvU=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P6P66kW7+LvLIo4WHjXGltpT8CA=
+			</data>
+			<key>hash2</key>
+			<data>
+			2BV684CZjHtMZHxSiwC5qc/DGXv9WIOWUc9dEU/Q1pw=
+			</data>
+		</dict>
+		<key>Frameworks/libXCTestBundleInject.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xKX69bDGMJa2TcU/BC9ypZ06rsI=
+			</data>
+			<key>hash2</key>
+			<data>
+			jJ/zKe1SwWk9KkZ4MXV01NPW4QiHpU1aZhpfTDknkp0=
+			</data>
+		</dict>
 		<key>Ionicons.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -291,6 +408,61 @@
 			<key>hash2</key>
 			<data>
 			8KI41G1nSeYBwS8g+PwDIB8Ze5/jR75MLJRP/FxLYDU=
+			</data>
+		</dict>
+		<key>PlugIns/WingAppTests.xctest.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ExdrQApldKWr6+yZaM7raCieJEY=
+			</data>
+			<key>hash2</key>
+			<data>
+			X9+WFIinZQegh/SUwB2nwzUqATHu4WJfVlicSWiId3w=
+			</data>
+		</dict>
+		<key>PlugIns/WingAppTests.xctest.dSYM/Contents/Resources/DWARF/WingAppTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PXvnO0guX7FoECtRMxHV+G+n+Ps=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z5CsJNt/IBid2DoVuE7qVMrHG7H5mVAMT6G4dyjc4AQ=
+			</data>
+		</dict>
+		<key>PlugIns/WingAppTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IIrE3X5lqW/ewZuIvq8Z2/WSVv4=
+			</data>
+			<key>hash2</key>
+			<data>
+			l0Qr7MVMX3LiDWHF5FJgJC/N/AgauCMBtep9S7sRx2E=
+			</data>
+		</dict>
+		<key>PlugIns/WingAppTests.xctest/WingAppTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k4weawY0C5fvlJDhwthovVc1kdQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			f5jwgKuwqkwM9VjSnMfnsMxgUOBWNRQ/PjWvat0RF14=
+			</data>
+		</dict>
+		<key>PlugIns/WingAppTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GOFssTg9vlVFQLRkMcCmn8MRZRg=
+			</data>
+			<key>hash2</key>
+			<data>
+			fys+ZznHew0dIaPc4c2l80ZTd5NlPE9/WHg/+BPyYTg=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>

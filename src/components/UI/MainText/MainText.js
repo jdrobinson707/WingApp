@@ -5,7 +5,7 @@ const mainText = props => <Text style={[styles.mainText, props.style]}>{props.ch
 
 const styles = StyleSheet.create({
   mainText: {
-    color: "black",
+    color: "#333333",
     backgroundColor: "transparent",
     fontFamily: 'Montserrat-Black'
   }
