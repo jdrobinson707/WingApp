@@ -102,8 +102,8 @@ const styles = StyleSheet.create({
     buttonText: { 
       color: "white", 
       fontSize: 15, 
-      fontWeight: "600", 
-      fontFamily: "Montserrat-Black",
+      fontWeight: "400", 
+      fontFamily: "Montserrat-Light",
       letterSpacing: 1
     },
     inputContainer: {

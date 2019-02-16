@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, Dimensions, StyleSheet, ScrollView} from "react-native";
+import { View, Image, Dimensions, StyleSheet, ScrollView, Platform } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import Task from "./Task";
 import MainText from '../../../components/UI/MainText/MainText';
@@ -9,19 +9,39 @@ import {addMessage} from "../../../store/actions/index";
 
 const screenWidth = Dimensions.get("window").width;
 const screenHeight = Dimensions.get("window").height;
+const wingLogoImg = require('../../../assets/mainlogo-clear-bg.png');
+
+
 
 class TaskHistory extends Component {
-
     componentDidMount() {
         Icon.getImageSource("md-cart", 26).then(cart => {
             Icon.getImageSource("md-menu", 27).then(sideDrawer => {
                 this.props.navigator.setButtons({
-                    rightButtons: [{id: "cart", icon: cart}],
-                    leftButtons: [{id: "sideDrawer", icon: sideDrawer}]
+                    // rightButtons: [{id: "cart", icon: cart}],
+                    // rightButtons: [{id: "cart", icon: wingLogoImg}],
+                    // rightButtons: [{id: "WingLogo", component: 'wing-app.WingLogo'}],
+                    leftButtons: [
+                        {id: "sideDrawer", icon: sideDrawer}
+                    ]
                 });
             });
         });
+        this.props.navigator.setStyle({
+            navBarCustomView: 'wing-app.WingLogo',
+            navBarComponentAlignment: 'center',
+            navBarCustomViewInitialProps: {title: 'WingLogo'},
+            drawUnderNavBar: "true",
+            topBarElevationShadowEnabled: Platform.OS == 'anroid' ? "false" : null,
+            navBarNoBorder: "true",
+        });
     }
+
+    static navigatorStyle = {
+        navBarButtonColor: "black",
+        navBarBackgroundColor: "#fcfcfc",
+        navBarNoBorder: true
+    };
 
     constructor(props) {
         super(props);
@@ -38,6 +58,10 @@ class TaskHistory extends Component {
             this.props.navigator.toggleDrawer({
                 side: "left"
             });
+        } else if (event.id == "TaskModal") {
+            this.props.navigator.showModal({
+                screen: "wing-app.TaskModal"
+            })
         }
         if (event.type == "DeepLink") {
             const parts = event.link.split("/");
@@ -116,17 +140,26 @@ class TaskHistory extends Component {
         }
     };
 
+    showTask() {
+        this.props.navigator.showModal({
+            screen: 'wing-app.TaskModal',
+            animationType: 'none',
+            overrideBackPress: 'true'
+        });
+    }
+
     render() {
         return (
             <ScrollView contentContainerStyle={styles.container}>
                 <View style={styles.greetingContainer}>
+                    <MainText style={styles.title}>Task History</MainText>
                     <MainText style={styles.greeting}>What you've been up to</MainText>
-                    <Task/>
-                    <Task/>
-                    <Task/>
-                    <Task/>
-                    <Task/>
-                    <Task/>
+                    <Task onPress={()=>{this.showTask();}}/>
+                    <Task onPress={()=>{this.showTask();}}/>
+                    <Task onPress={()=>{this.showTask();}}/>
+                    <Task onPress={()=>{this.showTask();}}/>
+                    <Task onPress={()=>{this.showTask();}}/>
+                    <Task onPress={()=>{this.showTask();}}/>
                 </View>
             </ScrollView>
 
@@ -136,19 +169,31 @@ class TaskHistory extends Component {
 }
 
 const styles = StyleSheet.create({
+    title:{
+        fontSize: 42,
+    },
     greeting: {
-        fontSize: 30, color: "black", fontWeight: "200", borderWidth: 0
+        fontSize: 22,
+        color: "#999",
+        fontWeight: "200",
+        borderWidth: 0,
+        fontFamily: "Montserrat-Light",
+        paddingBottom: 20
+        // Montserrat already defined in MainText.js
     },
     container:{
-        height: screenHeight * 1.5,
+        height: screenHeight * 2,
         // alignItems: 'center',
-        paddingTop: 30
-
+        paddingTop: 15,
+        backgroundColor: "#F6F6F6"
     },
     greetingContainer: {
         // flex: 0.05,
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    task:{
+        elevation: 4,
     }
 });
 

@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
-    "postinstall": "./node_modules/react-native-maps/enable-google-maps ./ios"
+    "postinstall": "./node_modules/react-native-maps/enable-google-maps ./ios",
+    "and": "react-native run-android"
   },
   "dependencies": {
     "@babel/runtime": "^7.2.0",
