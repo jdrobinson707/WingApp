@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Image, Dimensions, StyleSheet, ScrollView} from "react-native";
+import { View, Image, Dimensions, StyleSheet, ScrollView, Platform } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import Task from "./Task";
 import MainText from '../../../components/UI/MainText/MainText';
@@ -22,7 +22,7 @@ class TaskHistory extends Component {
                     // rightButtons: [{id: "cart", icon: wingLogoImg}],
                     // rightButtons: [{id: "WingLogo", component: 'wing-app.WingLogo'}],
                     leftButtons: [
-                        {id: "sideDrawer", icon: sideDrawer},
+                        {id: "sideDrawer", icon: sideDrawer}
                     ]
                 });
             });
@@ -32,12 +32,16 @@ class TaskHistory extends Component {
             navBarComponentAlignment: 'center',
             navBarCustomViewInitialProps: {title: 'WingLogo'},
             drawUnderNavBar: "true",
-            navBarTransparent: "true",
-            topBarElevationShadowEnabled: "false",
+            topBarElevationShadowEnabled: Platform.OS == 'anroid' ? "false" : null,
             navBarNoBorder: "true",
         });
-
     }
+
+    static navigatorStyle = {
+        navBarButtonColor: "black",
+        navBarBackgroundColor: "#fcfcfc",
+        navBarNoBorder: true
+    };
 
     constructor(props) {
         super(props);

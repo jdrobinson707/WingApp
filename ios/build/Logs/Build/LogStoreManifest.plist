@@ -5,6 +5,36 @@
 	<key>logFormatVersion</key>
 	<integer>9</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>EA00D360-C341-4894-B275-8E89CA976B90</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EA00D360-C341-4894-B275-8E89CA976B90.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>WingApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WingApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>572025805.995049</real>
+			<key>timeStoppedRecording</key>
+			<real>572025840.06415796</real>
+			<key>title</key>
+			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>EA00D360-C341-4894-B275-8E89CA976B90</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

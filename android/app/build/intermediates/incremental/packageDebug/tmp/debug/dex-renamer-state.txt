@@ -1,4 +1,4 @@
-#Thu Feb 14 11:14:18 PST 2019
-base.0=C\:\\Users\\Alex\\Desktop\\Wing\\WingApp\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Sat Feb 16 08:14:23 PST 2019
+base.0=/Users/jarodrobinson/Developer/ReactNative/WingApp/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
