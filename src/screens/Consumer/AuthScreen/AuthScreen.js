@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
       color: "white", 
       fontSize: 15, 
       fontWeight: "400", 
-      fontFamily: "Montserrat-Black",
+      fontFamily: "Montserrat-Light",
       letterSpacing: 1
     },
     inputContainer: {

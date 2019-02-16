@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jarodrobinson/Developer/ReactNative/WingApp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "C:\\Users\\Alex\\Desktop\\Wing\\WingApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/jarodrobinson/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/3051c51cfedf58cbdab04fdf5188ec3c/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\Alex\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b8eea21509f3a31cd2519239bbe3aabe\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jarodrobinson/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5eb855f0dbda7fc5c0ea2c04b12120ad/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\Alex\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\de803fd69c204feb9295b0d6e2f080b8\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

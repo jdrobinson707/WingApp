@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   mainText: {
     color: "black",
     backgroundColor: "transparent",
-    fontFamily: 'Montserrat-Black'
+    fontFamily: 'Montserrat-Medium'
   }
 });
 
