@@ -169,7 +169,7 @@ class HomeScreen extends Component {
     raiseTextInput() {
       Animated.timing(
         this.state.offsetY,
-        { toValue: -100,
+        { toValue: -screenHeight*0.1,
           duration: 200 }
       ).start();
       Animated.timing(
@@ -283,11 +283,11 @@ class HomeScreen extends Component {
             </View>
             <View style={{flexDirection: 'row', marginTop: 10}}>
               <TouchableOpacity>
-                <Image source={require('../../../assets/starbs.jpg')} style={[{width: 160, height: 160}, GlobalStyles.cardBorder]} />
+                <Image source={require('../../../assets/starbs.jpg')} style={[{width: screenWidth*0.425, height: screenHeight*0.18}, GlobalStyles.cardBorder]} />
               </TouchableOpacity>
               <View style={{width: 5}}></View>
               <TouchableOpacity>
-                <Image source={require('../../../assets/starbs.jpg')} style={{width: 160, height: 160}} />
+                <Image source={require('../../../assets/starbs.jpg')} style={[{width: screenWidth*0.425, height: screenHeight*0.18}, GlobalStyles.cardBorder]} />
               </TouchableOpacity>
             </View>
           </View>
@@ -324,6 +324,7 @@ const styles = StyleSheet.create({
   },
   textInput: {
     width: screenWidth * 0.85,
+    height: screenHeight *0.05,
     justifyContent: "center",
     textAlign: "left",
     fontSize: 14,
@@ -361,6 +362,7 @@ const styles = StyleSheet.create({
   },
   bubbleContainer: {
     flexDirection: 'row',
+    alignItems: 'center',
     width: screenWidth * 0.9
   },
   tipContainer: {
