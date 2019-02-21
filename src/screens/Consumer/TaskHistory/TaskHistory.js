@@ -32,7 +32,7 @@ class TaskHistory extends Component {
             navBarComponentAlignment: 'center',
             navBarCustomViewInitialProps: {title: 'WingLogo'},
             drawUnderNavBar: "true",
-            topBarElevationShadowEnabled: Platform.OS == 'anroid' ? "false" : null,
+            topBarElevationShadowEnabled: Platform.OS == 'android' ? "false" : null,
             navBarNoBorder: "true",
         });
     }
