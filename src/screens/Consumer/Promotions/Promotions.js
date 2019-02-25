@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import { View, Text, Dimensions, StyleSheet } from "react-native";
+import {View, Text, Dimensions, StyleSheet, TextInput} from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 
-import HeadingText from '../../../components/UI/HeadingText/HeadingText';
-import MainText from '../../../components/UI/MainText/MainText';
+import DefaultInput from "../../../components/UI/DefaultInput/DefaultInput";
+import ButtonWithBackground from "../../../components/UI/ButtonWithBackground/ButtonWithBackground";
+import HeadingText from "../../../components/UI/HeadingText/HeadingText";
+import MainText from "../../../components/UI/MainText/MainText";
 
-import ButtonWithBackground from '../../../components/UI/ButtonWithBackground/ButtonWithBackground';
+const screenWidth = Dimensions.get("window").width;
+const screenHeight = Dimensions.get('window').height;
 
 class Promotions extends Component {
   componentDidMount() {
@@ -22,6 +25,7 @@ class Promotions extends Component {
   constructor(props) {
     super(props);
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+    this.state = {text: 'XXXX'};
   }
 
   onNavigatorEvent = event => {
@@ -112,34 +116,101 @@ class Promotions extends Component {
       }
   };
 
+  submitCode = () => { alert("Code Submitted!") }
+
   render() {
     return (
-      <View
-        style={[styles.container, { width: Dimensions.get("window").width }]}
-      >
-        <MainText>
-          <Text style={{ fontSize: 28, fontWeight: "300" }}>GOT A </Text>
-          <HeadingText style={styles.headerText}>CODE?</HeadingText>
-        </MainText>
-        <View>
-            <Text>
-                
-            </Text>
+        <View style={styles.container}>
+            <View style={styles.topContainer}>
+                <MainText>
+                    <Text style={{ fontSize: 28, fontWeight: "300" }}>GOT A </Text>
+                    <HeadingText style={styles.headerText}>CODE?</HeadingText>
+                </MainText>
+
+                <TextInput
+                    style={[styles.inputTextStyle, styles.textBox]}
+                    onChangeText={(text) => this.setState({text})}
+                    value={this.state.text}
+                    multiline= {true}
+                    onFocus= {() => this.setState({text : ''})}
+                />
+
+            </View>
+
+            <View style={styles.buttonContainer}>
+                <ButtonWithBackground style={styles.submitButton} textStyle={[styles.buttonText, { color: "white" }]} onPress={this.submitCode}>
+                    SUBMIT
+                </ButtonWithBackground>
+            </View>
         </View>
-      </View>
+
     );
   }
 }
-
 const styles = StyleSheet.create({
+    subtitle: {
+        fontSize: 22,
+        color: "#999",
+        fontWeight: "200",
+        fontFamily: "Montserrat-Light",
+    },
+    container: {
+        flex: 1,
+        paddingTop: 15,
+        backgroundColor: "#F6F6F6"
+    },
+    topText: {
+        fontSize: 42
+    },
+    topContainer: {
+        paddingTop: screenHeight * .1,
+        paddingBottom: screenWidth * .1,
+        alignItems: 'center',
+        justifyContent: 'space-around'
+    },
+    textBox: {
+        height: screenHeight * .15,
+        width: screenWidth * .85,
+        marginTop: screenHeight *.03,
+        borderBottomColor: "#7FBCCE",
+        borderBottomWidth: 1,
+        textAlignVertical: 'center',
+        textAlign: 'center',
+        letterSpacing: 10
+    },
+    buttonText: {
+        color: "white",
+        fontSize: 13,
+        fontWeight: "200",
+        fontFamily: "Montserrat-Black",
+        letterSpacing: 1,
+    },
+    buttonContainer: {
+        flex: 1,
+        justifyContent: 'flex-end',
+        alignItems: 'center'
+    },
+    submitButton: {
+        backgroundColor: "#7FBCCE" ,
+        height: screenHeight * 0.08,
+        width: screenWidth,
+        borderRadius: 0,
+        borderColor: 'transparent',
+        margin: 0,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    inputTextStyle: {
+        color: "#333333",
+        fontSize: 16,
+        fontWeight: "normal",
+        fontFamily: "Montserrat-Black"
+    },
     container: {
         paddingTop: 22,
         backgroundColor: "white",
         flex: 1,
         alignItems: 'center'
-    },
-    headerText: {
-
     }
 });
 
