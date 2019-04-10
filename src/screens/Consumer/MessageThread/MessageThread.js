@@ -1,39 +1,47 @@
 import React, { Component } from "react";
 import { View, Platform, StyleSheet, Dimensions, Text } from "react-native";
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
 import { connect } from "react-redux";
+import { createStore } from 'redux';
 import { GiftedChat } from 'react-native-gifted-chat';
 import LinearGradient from "react-native-linear-gradient";
 
 import Icon from "react-native-vector-icons/Ionicons";
-import { addMessage } from "../../../store/actions";
+import { submitRequest } from "../../../store/actions";
+
+import { RemoteMessage } from 'react-native-firebase';
+
+import Fire from '../../../../Firebase/Firebase';
 
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
-class HomeScreen extends Component {
+class MessageThread extends Component {
+
+  state = {
+    messages: [{ _id: 0, text: this.props.request.toString(), createdAt: new Date(), user: { _id: 0, name: "Wing", avatar: "https://getwingapp.com/mob/app/img/assets/mainlogo.png" } }]
+  }
+
   static navigatorStyle = {
     navBarButtonColor: "black",
     navBarBackgroundColor: "#fcfcfc",
     navBarNoBorder: true
   };
 
-  componentWillMount() {
-    this.setState({
-      messages: [
-        {
-          _id: 1,
-          text: this.props.message[0].messageContents,
-          createdAt: new Date(),
-          user: {
-            _id: 2,
-            name: "React Native",
-            avatar: "https://getwingapp.com/mob/app/img/assets/mainlogo.png"
-          }
-        }
-      ]
+  componentDidMount(messages = []) {
+    Fire.shared.on(message =>
+      this.setState(previousState => ({
+        messages: GiftedChat.append(previousState.messages, message),
+      }))
+    );
+
+    this.messageListener = firebase.messaging().onMessage((message: RemoteMessage) => {
+      // Process your message as required
     });
+  }
+
+  componentWillUnmount() {
+    Fire.shared.off();
   }
 
   constructor(props) {
@@ -42,6 +50,14 @@ class HomeScreen extends Component {
       settingsIcon = source;
     });
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+  }
+
+  get user() {
+    // Return our name and our UID for GiftedChat to parse
+    return {
+      name: this.props.navigation.state.params.name,
+      _id: Fire.shared.uid,
+    };
   }
 
   onNavigatorEvent = event => {
@@ -75,8 +91,7 @@ class HomeScreen extends Component {
           <View style={{ flex: 1, paddingBottom: 20 }}>
             <GiftedChat
               messages={this.state.messages}
-              onSend={messages => this.onSend(messages)}
-              user={{ _id: 1 }}
+              onSend={Fire.send}
             />
           </View>
         </View>
@@ -86,23 +101,17 @@ class HomeScreen extends Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        paddingTop: 22,
-        alignItems: "center",
-        width: windowWidth,
-        flex: 1
-    }
+  container: {
+    paddingTop: 22,
+    alignItems: "center",
+    width: windowWidth,
+    flex: 1
+  }
 });
 
 const mapStateToProps = state => {
-    return { message: state.message.message };
+  return { request: state.request.request };
 }
 
-const mapDispatchToProps = dispatch => {
-    return {
-        onAddMessage: (message) => dispatch(addMessage(message))
-    };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);
+export default connect(mapStateToProps, null)(MessageThread);
 

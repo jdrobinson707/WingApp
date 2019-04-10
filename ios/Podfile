@@ -1,0 +1,61 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'WingApp' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for WingApp
+
+  #target 'WingApp-tvOSTests' do
+ #   inherit! :search_paths
+    # Pods for testing
+#  end
+	
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge',
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket',
+    'RCTAnimation',
+  ]
+	
+  post_install do |installer_representation|
+      installer_representation.pods_project.targets.each do |target|
+          if target.name == "React"
+              target.remove_from_project
+          end
+      end
+  end
+
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  target 'WingAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+pod 'Firebase/Auth', '~> 5.15.0'
+pod 'Firebase/Messaging'
+
+end
+
+#target 'WingApp-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for WingApp-tvOS
+
+  #target 'WingApp-tvOSTests' do
+ #   inherit! :search_paths
+    # Pods for testing
+#  end
+
+#end

@@ -9,6 +9,8 @@ import {
 } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
+import firebase from 'react-native-firebase';
+
 import PhoneInput from "react-native-phone-input";
 import MainText from "../../../components/UI/MainText/MainText";
 import DefaultInput from "../../../components/UI/DefaultInput/DefaultInput";
@@ -44,6 +46,14 @@ class EmailSignUp extends Component {
         navBarHidden: true
     };
 
+    handleSignUp = () => {
+        firebase
+            .auth()
+            .createUserWithEmailAndPassword(this.state.email, this.state.password)
+            .then(() => this.props.navigation.navigate('Main'))
+            .catch(error => this.setState({ errorMessage: error.message }))
+    }
+
     constructor(props) {
         super(props);
     }
@@ -68,14 +78,6 @@ class EmailSignUp extends Component {
             phoneNumber: this.state.controls.phoneNumber.value,
             password: this.state.controls.password.value
         };
-        SendSMS.send({
-            body: 'The default body of the SMS!',
-            recipients: ['2144550540'],
-            successTypes: ['sent', 'queued'],
-            allowAndroidSendWithoutReadPermission: true
-        }, (completed, cancelled, error) => {
-            console.log('SMS Callback: completed: ' + completed + ' cancelled: ' + cancelled + 'error: ' + error);
-        });
         startConsumerApp()
     };
 

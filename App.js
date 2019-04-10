@@ -21,9 +21,11 @@ import Settings from './src/screens/Consumer/Settings/Settings';
 import Help from './src/screens/Consumer/Help/Help';
 import ThreadHistory from './src/screens/Consumer/ThreadHistory/ThreadHistory';
 import MessageThread from './src/screens/Consumer/MessageThread/MessageThread';
+import LoadingScreen from './src/screens/Consumer/LoadingScreen/LoadingScreen';
 
 
 import React from "react";
+import Loading from './src/screens/Consumer/LoadingScreen/LoadingScreen';
 
 
 const store = configureStore();
@@ -153,10 +155,16 @@ Navigation.registerComponent(
     Provider
 );
 
+Navigation.registerComponent(
+    "wing-app.LoadingScreen",
+    () => LoadingScreen,
+    store,
+    Provider
+)
+
 // Start a App
 Navigation.startSingleScreenApp({
     screen: {
-        screen: "wing-app.Authscreen",
-        title: "Login"
+        screen: "wing-app.LoadingScreen"
     }
 });

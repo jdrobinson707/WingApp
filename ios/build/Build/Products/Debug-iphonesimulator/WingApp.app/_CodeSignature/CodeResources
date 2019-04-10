@@ -10,7 +10,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		mhgmSwGJIB1BcfymDboho3bFewY=
+		bwY2UACAe7N3tFrqzPpNpDh42/M=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -73,9 +73,13 @@
 		<data>
 		xKX69bDGMJa2TcU/BC9ypZ06rsI=
 		</data>
+		<key>GoogleService-Info.plist</key>
+		<data>
+		lK8I21YTRea9cTTcEZXalg0vclg=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		FuSxptcbGcPBdPKOBwRQzBhTUBk=
+		357L0OrmUcxjo7Qk8mOE6YUoGBM=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -119,7 +123,7 @@
 		</data>
 		<key>PlugIns/WingAppTests.xctest.dSYM/Contents/Resources/DWARF/WingAppTests</key>
 		<data>
-		PXvnO0guX7FoECtRMxHV+G+n+Ps=
+		kOLSfcoCd3/DQffDxYVitoLz1/I=
 		</data>
 		<key>PlugIns/WingAppTests.xctest/Info.plist</key>
 		<data>
@@ -127,7 +131,7 @@
 		</data>
 		<key>PlugIns/WingAppTests.xctest/WingAppTests</key>
 		<data>
-		k4weawY0C5fvlJDhwthovVc1kdQ=
+		8Rz6YnoKuv3k6ao1QmNO42QKK3Q=
 		</data>
 		<key>PlugIns/WingAppTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
@@ -140,6 +144,14 @@
 		<key>Zocial.ttf</key>
 		<data>
 		C9pZx7zT05J94EfgkYdaRCi/0as=
+		</data>
+		<key>gRPCCertificates-Firestore.bundle/Info.plist</key>
+		<data>
+		MirRhL475plQXp1RNlyHnOKyhgI=
+		</data>
+		<key>gRPCCertificates-Firestore.bundle/roots.pem</key>
+		<data>
+		xq5vdh9iqFfxDhAvNbdrZ3FCwnY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -159,11 +171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mhgmSwGJIB1BcfymDboho3bFewY=
+			bwY2UACAe7N3tFrqzPpNpDh42/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			VoXw7m8LEaBkpWF6IRUId539hMJL/RjC6QdPQNtrb0g=
+			hDZb5f5u682hYvUqtrtKDXU+4gQ7P1C8nlv1j9TsrVI=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -322,6 +334,17 @@
 			jJ/zKe1SwWk9KkZ4MXV01NPW4QiHpU1aZhpfTDknkp0=
 			</data>
 		</dict>
+		<key>GoogleService-Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lK8I21YTRea9cTTcEZXalg0vclg=
+			</data>
+			<key>hash2</key>
+			<data>
+			jV5JRGW7kAnfCZuW8lsr+jeFfkZksiPcgDjrPKJRUcI=
+			</data>
+		</dict>
 		<key>Ionicons.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -425,11 +448,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PXvnO0guX7FoECtRMxHV+G+n+Ps=
+			kOLSfcoCd3/DQffDxYVitoLz1/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z5CsJNt/IBid2DoVuE7qVMrHG7H5mVAMT6G4dyjc4AQ=
+			MIYQ4pYK86MhOh5VNrDeSsnTOgB9jufFLeW2AQOHPks=
 			</data>
 		</dict>
 		<key>PlugIns/WingAppTests.xctest/Info.plist</key>
@@ -447,11 +470,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k4weawY0C5fvlJDhwthovVc1kdQ=
+			8Rz6YnoKuv3k6ao1QmNO42QKK3Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			f5jwgKuwqkwM9VjSnMfnsMxgUOBWNRQ/PjWvat0RF14=
+			/lcWwFVShJNwTOQNSVE2OnBdSzO4+alnCHG1lgY5gZ8=
 			</data>
 		</dict>
 		<key>PlugIns/WingAppTests.xctest/_CodeSignature/CodeResources</key>
@@ -485,6 +508,28 @@
 			<key>hash2</key>
 			<data>
 			17EKHr4YMOWi8I9JA7moDiwZEsDdL3O5P88r+DIhZgI=
+			</data>
+		</dict>
+		<key>gRPCCertificates-Firestore.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MirRhL475plQXp1RNlyHnOKyhgI=
+			</data>
+			<key>hash2</key>
+			<data>
+			54UlR4sLqcEoSk6CKN0b/vqQUSbODw2gi5gZWVo6vLw=
+			</data>
+		</dict>
+		<key>gRPCCertificates-Firestore.bundle/roots.pem</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xq5vdh9iqFfxDhAvNbdrZ3FCwnY=
+			</data>
+			<key>hash2</key>
+			<data>
+			u1Ld4B/0KXyrlDgzSI0csPX2ZYtKXu7h7d15+tlySZ4=
 			</data>
 		</dict>
 	</dict>

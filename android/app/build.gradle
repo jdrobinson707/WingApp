@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-firebase')
     compile project(':react-native-linear-gradient')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:design:27.1.0'

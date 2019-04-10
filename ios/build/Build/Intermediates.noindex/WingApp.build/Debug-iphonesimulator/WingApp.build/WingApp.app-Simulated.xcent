@@ -3,10 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>735JYETPXH.org.reactjs.native.example.WingApp</string>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>735JYETPXH.org.reactjs.native.example.WingApp</string>
-	</array>
+	<string>735JYETPXH.com.wing.wingapp</string>
+	<key>aps-environment</key>
+	<string>development</string>
 </dict>
 </plist>

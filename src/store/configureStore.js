@@ -1,9 +1,9 @@
 import { createStore, combineReducers } from "redux";
 
-import messagesReducer from "./reducers/messages";
+import requestsReducer from "./reducers/requests";
 
 const rootReducer = combineReducers({
-  message: messagesReducer
+  request: requestsReducer
 });
 
 const configureStore = () => {

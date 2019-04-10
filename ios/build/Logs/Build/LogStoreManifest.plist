@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>298127D9-6546-4C5A-A19C-F4B8408A2623</key>
+		<key>C59C3A4D-A484-4C34-BCAA-A31C11E40E03</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,10 +15,9 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>298127D9-6546-4C5A-A19C-F4B8408A2623.xcactivitylog</string>
-			<string>EA00D360-C341-4894-B275-8E89CA976B90.xcactivitylog</string>
+			<string>C59C3A4D-A484-4C34-BCAA-A31C11E40E03.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
 			<string>WingApp project</string>
 			<key>schemeIdentifier-schemeName</key>
@@ -26,17 +25,17 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
+			<string>Building workspace WingApp with scheme WingApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>571785572.27293003</real>
+			<real>576575713.53892505</real>
 			<key>timeStoppedRecording</key>
-			<real>571785580.45748305</real>
+			<real>576575739.38262701</real>
 			<key>title</key>
-			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
+			<string>Building workspace WingApp with scheme WingApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>298127D9-6546-4C5A-A19C-F4B8408A2623</string>
+			<string>C59C3A4D-A484-4C34-BCAA-A31C11E40E03</string>
 		</dict>
-		<key>401141FB-E88D-4270-B117-65111D00B729</key>
+		<key>EA39DFFD-9623-493E-8F46-67B96C957EC4</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -45,9 +44,9 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>401141FB-E88D-4270-B117-65111D00B729.xcactivitylog</string>
+			<string>EA39DFFD-9623-493E-8F46-67B96C957EC4.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
 			<string>WingApp project</string>
 			<key>schemeIdentifier-schemeName</key>
@@ -55,15 +54,15 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
+			<string>Building workspace WingApp with scheme WingApp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>571977209.49208701</real>
+			<real>574969941.66941798</real>
 			<key>timeStoppedRecording</key>
-			<real>571977258.43074405</real>
+			<real>574969953.63041306</real>
 			<key>title</key>
-			<string>Building project WingApp with scheme WingApp and configuration Debug</string>
+			<string>Building workspace WingApp with scheme WingApp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>401141FB-E88D-4270-B117-65111D00B729</string>
+			<string>EA39DFFD-9623-493E-8F46-67B96C957EC4</string>
 		</dict>
 	</dict>
 </dict>

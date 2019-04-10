@@ -9,6 +9,8 @@ import {
 } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
+import firebase from 'react-native-firebase';
+
 import MainText from "../../../components/UI/MainText/MainText";
 import DefaultInput from "../../../components/UI/DefaultInput/DefaultInput";
 
@@ -20,12 +22,21 @@ const screenHeight = Dimensions.get('window').height
 class NameSignUp extends Component {
     state = {
         controls: {
-        firstName: {
-            value: ""
-        },
-        lastName: {
-            value: ""
-        }
+            fullName: {
+                value: ""
+            },
+            phoneNumber: {
+                value: ""
+            },
+            email: {
+                value: ""
+            },
+            password: {
+                value: ""
+            },
+            errorMessage: {
+                value: ""
+            }
         }
     };
 
@@ -56,15 +67,13 @@ class NameSignUp extends Component {
         });
     };
 
-    submitHandler = () => {
-        const authData = {
-            firstName: this.state.controls.firstName.value,
-            lastName: this.state.controls.lastName.value
-        };
-        this.props.navigator.push({
-            screen: 'wing-app.EmailSignUp'
-        })
-    };
+    handleSignUp = () => {
+        firebase
+            .auth()
+            .createUserWithEmailAndPassword(this.state.controls.email.value, this.state.controls.password.value)
+            .then(() => this.props.navigator.push({screen: 'wing-app.ConsumerHomeScreen'}))
+            .catch(error => this.setState({ errorMessage: error.message }))
+    }
 
     render() {
         return (
@@ -82,7 +91,7 @@ class NameSignUp extends Component {
             >
             <TouchableOpacity onPress={this.backHandler}>
                 <View style={styles.backButton}>
-                <Icon size={40} name={"md-arrow-back"} color="white" onPress={this.backHandler}/>
+                <Icon size={40} name={"md-arrow-back"} color="white" />
                 </View>
             </TouchableOpacity>
             </View>
@@ -101,22 +110,36 @@ class NameSignUp extends Component {
                 </View>
                 <View>
                 <DefaultInput
-                    placeholder="First Name"
+                    placeholder="Full Name"
                     style={styles.inputContainer}
-                    value={this.state.controls.firstName.value}
-                    onChangeText={val => this.updateInputState("firstName", val)}
+                    value={this.state.controls.fullName.value}
+                    onChangeText={val => this.updateInputState("fullName", val)}
                     autoCorrect={false}
                 />
                 <DefaultInput
-                    placeholder="Last Name"
+                    placeholder="Phone Number"
                     style={styles.inputContainer}
-                    value={this.state.controls.lastName.value}
-                    onChangeText={val => this.updateInputState("lastName", val)}
+                    value={this.state.controls.phoneNumber.value}
+                    onChangeText={val => this.updateInputState("phoneNumber", val)}
+                    autoCorrect={false}
+                />
+                <DefaultInput
+                    placeholder="Email Address"
+                    style={styles.inputContainer}
+                    value={this.state.controls.email.value}
+                    onChangeText={val => this.updateInputState("email", val)}
+                    autoCorrect={false}
+                />
+                <DefaultInput
+                    placeholder="Password"
+                    style={styles.inputContainer}
+                    value={this.state.controls.password.value}
+                    onChangeText={val => this.updateInputState("password", val)}
                     autoCorrect={false}
                 />
                 </View>
                 <View style={styles.continueButton}>
-                <TouchableOpacity onPress={this.submitHandler}>
+                <TouchableOpacity onPress={this.handleSignUp}>
                     <View style={styles.backButton}>
                     <Icon
                         size={60}

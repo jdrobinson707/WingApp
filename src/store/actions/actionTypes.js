@@ -1,3 +1,2 @@
-export const ADD_MESSAGE = 'ADD_MESSAGE';
-
-export const TRY_AUTH = 'TRY_AUTH';
+export const SUBMIT_REQUEST = 'SUBMIT_REQUEST';
+export const GET_USER_DATA = 'GET_USER_DATA';

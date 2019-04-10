@@ -1,1 +1,1 @@
-export { addMessage } from './messages';
+export { submitRequest } from './submitRequest';

@@ -1,13 +1,30 @@
 dependencies: \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/WingApp/AppDelegate.m \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/WingApp/AppDelegate.m \
   WingApp/AppDelegate.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBundleURLProvider.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/Pods/Firebase/CoreOnly/Sources/module.modulemap \
+  Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap \
+  Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h \
+  Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h \
+  Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h \
+  Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h \
+  Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h \
+  Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h \
+  Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
+  Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
+  Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/Pods/Firebase/CoreOnly/Sources/Firebase.h \
+  ../node_modules/react-native-firebase/ios/RNFirebase/notifications/RNFirebaseNotifications.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventEmitter.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  ../node_modules/react-native-firebase/ios/RNFirebase/messaging/RNFirebaseMessaging.h \
   ../node_modules/react-native-navigation/ios/RCCManager.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/jarodrobinson/Developer/ReactNative/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBundleURLProvider.h \
+  /Users/jarodrobinson/Developer/ReactNative/Wing/WingApp/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h
